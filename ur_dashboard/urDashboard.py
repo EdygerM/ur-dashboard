@@ -41,7 +41,7 @@ s
         :return:
         :rtype: string
         """
-        programName = programName + ".urp\n"
-        self.server.sendall(programName.encode())
+        call = "load " + programName + ".urp\n"
+        self.server.sendall(call.encode())
 
         return self.server.recv(1024)
