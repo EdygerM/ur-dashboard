@@ -7,6 +7,10 @@ class URDashboard:
     """
     Create a communication using TCP/IP with the dashboard server interface of a Universal Robot e-series.
 
+    Based on https://www.universal-robots.com/articles/ur/dashboard-server-e-series-port-29999/ as of 07.10.22
+
+    UR robot needs to be set in remote mode on the polyscope application.
+
     :param ipAddress: the ip address of the Universal Robot.
     :type ipAddress: string
     """
