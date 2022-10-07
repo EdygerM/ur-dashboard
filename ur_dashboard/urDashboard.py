@@ -41,7 +41,7 @@ class URDashboard:
         :return:
         :rtype: string
         """
-
-        self.server.sendall(b(programName + ".urp\n"))
+        programName = programName + ".urp\n"
+        self.server.sendall(programName.encode())
 
         return self.server.recv(1024)
