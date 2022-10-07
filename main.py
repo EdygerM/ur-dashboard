@@ -4,6 +4,6 @@ robot1 = URDashboard("172.31.0.101")
 
 print(robot1.connect())
 
-programName = "moveAToB"
+programName = "moveBToC"
 
 print(robot1.load(programName))
